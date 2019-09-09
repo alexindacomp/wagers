@@ -2,7 +2,7 @@
 
 namespace Wagers\MQ\Producer;
 
-use App\MQStore\MessageInterface;
+use Wagers\MQ\Store\MessageInterface;
 use OldSound\RabbitMqBundle\RabbitMq\Producer as BaseProducer;
 
 /**

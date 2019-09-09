@@ -2,9 +2,7 @@
 
 namespace Wagers\MQ\Validator;
 
-use App\Entity\Enum\OperationStatusEnum;
-use App\MQStore\AbstractMessage;
-use App\Service\Finance\OperationService;
+use Wagers\Enum\OperationStatusEnum;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
