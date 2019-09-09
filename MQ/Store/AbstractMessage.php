@@ -25,7 +25,17 @@ abstract class AbstractMessage implements MessageInterface
     public function __construct()
     {
         $this->created = (new \DateTime('now'))->format('Y-m-d H:i');
-        $this->service = \getenv('PAYMENT_HOST');
+    }
+
+    /**
+     * @param string $service
+     *
+     * @return $this
+     */
+    public function setService(string $service)
+    {
+        $this->service = $service;
+        return $this;
     }
 
     /**
