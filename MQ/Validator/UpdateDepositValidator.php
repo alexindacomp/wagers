@@ -55,7 +55,7 @@ class UpdateDepositValidator extends AbstractValidator
             ]),
             'status' => new Assert\Optional([
                 new Assert\NotNull(),
-                new Assert\Choice(OperationStatusEnum::getConstants())
+                new Assert\Choice(['choices' => OperationStatusEnum::getConstants()])
             ]),
             'service' => new Assert\Optional([
                 new Assert\NotNull(),
