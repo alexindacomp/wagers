@@ -63,7 +63,7 @@ class UpdateDepositValidator extends AbstractValidator
             ]),
             'created' => new Assert\Optional([
                 new Assert\NotNull(),
-                new Assert\DateTime('Y-m-d H:i')
+                new Assert\Type('string')
             ]),
         ]);
 
