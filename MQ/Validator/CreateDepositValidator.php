@@ -23,6 +23,7 @@ class CreateDepositValidator extends AbstractValidator
         'userId',
         'userEmail',
         'amount',
+        'currency',
         'service',
         'created'
     ];
