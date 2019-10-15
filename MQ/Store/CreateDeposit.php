@@ -30,7 +30,7 @@ class CreateDeposit extends AbstractMessage
     /**
      * @var int
      */
-    public $currency;
+    public $paymentMethod;
 
     /**
      * @param int $id
@@ -77,13 +77,13 @@ class CreateDeposit extends AbstractMessage
     }
 
     /**
-     * @param int $currency
+     * @param int $paymentMethod
      *
      * @return CreateDeposit
      */
-    public function setCurrency(int $currency): self
+    public function setPaymentMethod(int $paymentMethod): self
     {
-        $this->currency = $currency;
+        $this->paymentMethod = $paymentMethod;
         return $this;
     }
 }

@@ -23,7 +23,7 @@ class CreateDepositValidator extends AbstractValidator
         'userId',
         'userEmail',
         'amount',
-        'currency',
+        'paymentMethod',
         'service',
         'created'
     ];
@@ -61,7 +61,7 @@ class CreateDepositValidator extends AbstractValidator
             'amount' => new Assert\Optional([
                 new Assert\NotNull(),
             ]),
-            'currency' => new Assert\Optional([
+            'paymentMethod' => new Assert\Optional([
                 new Assert\Type('integer')
             ]),
             'service' => new Assert\Optional([

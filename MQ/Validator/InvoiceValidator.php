@@ -7,9 +7,9 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class BitpayInvoiceValidator
+ * Class InvoiceValidator
  */
-class BitpayInvoiceValidator extends AbstractValidator
+class InvoiceValidator extends AbstractValidator
 {
     /**
      * @var ValidatorInterface

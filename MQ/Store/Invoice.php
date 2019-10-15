@@ -3,9 +3,9 @@
 namespace Wagers\MQ\Store;
 
 /**
- * Class BitpayInvoice
+ * Class Invoice
  */
-class BitpayInvoice extends AbstractMessage
+class Invoice extends AbstractMessage
 {
     /**
      * @var int
@@ -25,7 +25,7 @@ class BitpayInvoice extends AbstractMessage
     /**
      * @param int $id
      *
-     * @return BitpayInvoice
+     * @return Invoice
      */
     public function setOperationId(int $id): self
     {
@@ -36,7 +36,7 @@ class BitpayInvoice extends AbstractMessage
     /**
      * @param string $id
      *
-     * @return BitpayInvoice
+     * @return Invoice
      */
     public function setInvoiceId(string $id): self
     {
@@ -47,7 +47,7 @@ class BitpayInvoice extends AbstractMessage
     /**
      * @param string $link
      *
-     * @return BitpayInvoice
+     * @return Invoice
      */
     public function setInvoiceLink(string $link): self
     {
