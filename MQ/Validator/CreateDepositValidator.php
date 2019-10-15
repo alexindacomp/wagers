@@ -60,6 +60,9 @@ class CreateDepositValidator extends AbstractValidator
             'amount' => new Assert\Optional([
                 new Assert\NotNull(),
             ]),
+            'currency' => new Assert\Optional([
+                new Assert\Type('integer')
+            ]),
             'service' => new Assert\Optional([
                 new Assert\NotNull(),
                 new Assert\Type('string')

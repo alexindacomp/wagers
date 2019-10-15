@@ -28,6 +28,11 @@ class CreateDeposit extends AbstractMessage
     public $amount;
 
     /**
+     * @var int
+     */
+    public $currency;
+
+    /**
      * @param int $id
      *
      * @return CreateDeposit
@@ -68,6 +73,17 @@ class CreateDeposit extends AbstractMessage
     public function setAmount(float $amount): self
     {
         $this->amount = $amount;
+        return $this;
+    }
+
+    /**
+     * @param int $currency
+     *
+     * @return CreateDeposit
+     */
+    public function setCurrency(int $currency): self
+    {
+        $this->currency = $currency;
         return $this;
     }
 }
